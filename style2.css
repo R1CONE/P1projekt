@@ -1,0 +1,50 @@
+.h1 {
+    font-family: 'Armata', sans-serif;
+    font-size: 30px;
+    color: rgb(124, 45, 87);
+    text-indent: 20px;
+    transition-duration: 0.75s;
+}
+.h1:hover {
+    padding: 5px 5px;
+    filter: brightness(125%);
+}
+.h2 {
+    font-family: 'Armata', sans-serif;
+    font-size: 25px;
+    color: rgb(124, 45, 87);
+    text-indent: 20px;
+    transition-duration: 0.75s;
+}
+.h2:hover {
+    padding: 5px 5px;
+    filter: brightness(125%);
+}
+.h3 {
+    font-family: 'Armata', sans-serif;
+    font-size: 17.5px;
+    color: rgb(124, 45, 87);
+    text-indent: 15px;
+    transition-duration: 0.75s;
+}
+.h3:hover {
+    padding: 5px 5px;
+    filter: brightness(125%);
+}
+.a {
+    width: 750px;
+    height: 5px;
+    align-self: center;
+    display: block;
+    background-color: rgb(124, 45, 87);
+}
+#pic1 {
+    filter: hue-rotate(85deg) grayscale(50%);
+}
+.pic {
+    transition-duration: 0.75s;
+}
+.pic:hover {
+    filter: brightness(150%);
+    padding: 10px 10px;
+}

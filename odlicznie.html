@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body {
+        background-color: #db9c9c;
+    }
+    .container {
+        display: flex; /* Ustawienie elementów w linii poziomej */
+        align-items: center; /* Wyśrodkowanie elementów w pionie */
+    }
+    img {
+        width: 200px; /* Ustawienie szerokości obrazka */
+        height: auto; /* Automatyczne dostosowanie wysokości */
+    }
+    p {
+        margin-left: 50px; /* Dodatkowy odstęp od lewej strony */
+    }
+</style>
+  <title>Odliczanie do niedzieli handlowej</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script>
+    function countdown(endDate, elementId) {
+      var endDateObj = new Date(endDate).getTime();
+
+var x = setInterval(function() {
+    var now = new Date().getTime();
+    var distance = endDateObj - now;
+
+var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+document.getElementById(elementId).innerHTML = days + "d " + hours + "g "
++ minutes + "m " + seconds + "s ";
+
+if (distance < 0) {
+  clearInterval(x);
+  document.getElementById(elementId).innerHTML = "DZIS JEST NIEDZIELA HANDLOWA";
+}
+}, 1000);
+}
+</script>
+</head>
+<body>
+<center>
+  <font size="5"><h1 style="text-align: center"> TYLE CZASU POZOSTAŁO DO NIEDZIELI HANDOLWEJ: </h1></font>
+  <h1><p style="text-align: center"><span id="data1"></span> - 17 grudnia 2023 roku</p></h1>
+  <h1><p style="text-align: center"><span id="data2"></span> - 24 grudnia 2023 roku</p></h1>
+  <h1><p style="text-align: center"><span id="data3"></span> - 28 stycznia 2024 roku</p></h1>
+  <h1><p style="text-align: center"><span id="data4"></span> - 24 marca 2024 roku</p></h1>
+  <h1><p style="text-align: center"><span id="data5"></span> - 28 kwietnia 2024 roku</p></h1>
+  <h1><p style="text-align: center"><span id="data6"></span> - 30 czerwca 2024 roku</p></h1>
+
+<script>
+    countdown('2023-12-17', 'data1');
+    countdown('2023-12-24', 'data2');
+    countdown('2024-01-28', 'data3');
+    countdown('2024-03-24', 'data4');
+    countdown('2024-04-28', 'data5');
+    countdown('2024-06-30', 'data6');
+  </script>
+   <h1><a href="https://www.youtube.com/watch?v=HrWP1fibFfM&pp=ygUSY2hpcHMgc3Bpbm5pbmcgMTBo"><img src="https://www.creativefabrica.com/wp-content/uploads/2020/02/09/calendar-Graphics-1-580x387.png" style="width:1000px;height:500px;"></a></h1>
+</center>
+<font size="5">
+   <h1>Gazetki do 3 najpopilarniejszych sklepów w polsce:</h1>
+</font>
+  <center>
+<font size="10">
+
+  <div class="container">
+   <a href="https://www.lidl.pl/c/nasze-gazetki/s10008614?gclid=EAIaIQobChMIn4j98cGigQMVlx4YCh1LbQUIEAAYASAAEgKYhPD_BwE" target="_blank">Lidl</a>
+
+   <h1><a href="https://www.lidl.pl/c/nasze-gazetki/s10008614?gclid=EAIaIQobChMIn4j98cGigQMVlx4YCh1LbQUIEAAYASAAEgKYhPD_BwE" target="_blank"><img src="data:image/png;base64,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" style="width:50px;height:50px;"></a></h1>
+</div>
+
+<div class="container">
+   <a href="https://www.biedronka.pl/pl/gazetki?gclid=EAIaIQobChMIguPVqsKigQMVl1qRBR2gCwSvEAAYASAAEgL9OPD_BwE"target="_blank">Biedronka</a>
+  <h1><a href="https://www.biedronka.pl/pl/gazetki?gclid=EAIaIQobChMIguPVqsKigQMVl1qRBR2gCwSvEAAYASAAEgL9OPD_BwE" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/Biedronka_logo.svg/1200px-Biedronka_logo.svg.png" style="width:100px;height:50px;"></a></h1>
+
+ </div>
+
+  
+   <div class="container">
+    
+   <a href="https://www.auchan.pl/pl/gazetki" target="_blank">Auchan</a>
+<h1><a href="https://www.auchan.pl/pl/gazetki" target="_blank"><img src="https://latwyadres.pl/wp-content/uploads/2020/10/auchan-logo.png" style="width:70px;height:50px;"></a></h1>   
+</div>
+
+</center>
+</font>
+
+
+
+
+
+  </center>
+
+</body>
+</html>
