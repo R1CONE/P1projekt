@@ -31,6 +31,13 @@
     padding: 5px 5px;
     filter: brightness(125%);
 }
+.p {
+    font-family: 'Armata', sans-serif;
+    font-size: 25px;
+    color: rgb(124, 45, 87);
+    text-indent: 20px;
+    transition-duration: 0.75s;
+}
 .a {
     width: 750px;
     height: 5px;
