@@ -1,0 +1,44 @@
+  <script>
+    function countdown(endDate, elementId) {
+      var endDateObj = new Date(endDate).getTime();
+
+var x = setInterval(function() {
+    var now = new Date().getTime();
+    var distance = endDateObj - now;
+
+var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+document.getElementById(elementId).innerHTML = days + "d " + hours + "g "
++ minutes + "m " + seconds + "s ";
+
+if (distance < 0) {
+  clearInterval(x);
+  document.getElementById(elementId).innerHTML = "DZIS JEST NIEDZIELA HANDLOWA";
+}
+}, 1000);
+}
+</script>
+
+
+xxxxxxxxxxxxxxx
+<body>
+<center>
+  <font size="5"><h1 style="text-align: center"> TYLE CZASU POZOSTAŁO DO NIEDZIELI HANDOLWEJ: </h1></font>
+  <h1><p style="text-align: center"><span id="data1"></span> - 17 grudnia 2023 roku</p></h1>
+  <h1><p style="text-align: center"><span id="data2"></span> - 24 grudnia 2023 roku</p></h1>
+  <h1><p style="text-align: center"><span id="data3"></span> - 28 stycznia 2024 roku</p></h1>
+  <h1><p style="text-align: center"><span id="data4"></span> - 24 marca 2024 roku</p></h1>
+  <h1><p style="text-align: center"><span id="data5"></span> - 28 kwietnia 2024 roku</p></h1>
+  <h1><p style="text-align: center"><span id="data6"></span> - 30 czerwca 2024 roku</p></h1>
+
+<script>
+    countdown('2023-12-17', 'data1');
+    countdown('2023-12-24', 'data2');
+    countdown('2024-01-28', 'data3');
+    countdown('2024-03-24', 'data4');
+    countdown('2024-04-28', 'data5');
+    countdown('2024-06-30', 'data6');
+  </script>
